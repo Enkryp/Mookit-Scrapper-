@@ -1,0 +1,15 @@
+
+{
+	"manifest_version": 2,
+	"name": "Mookit Scraper",
+	"version": "2.2",
+
+	"content_scripts":[
+		{
+			"matches": [
+				"https://hello.iitk.ac.in/*"	
+			],
+			"js": ["/ex.js"]
+		}
+	]
+}
