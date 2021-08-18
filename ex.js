@@ -57,8 +57,9 @@ function exportCSVFile(headers, items, fileTitle) {
 
 var headers = {
     name: 'Lecture Name'.replace(/,/g, ''), // remove commas to avoid errors
-    link: "Lecture Link",
-    week: "Week #"
+    week: "Week #",
+    link: "Lecture Link"
+   
 };
 
 // helper func ends
