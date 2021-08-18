@@ -91,8 +91,12 @@ function fire() {
         }
 
 
+        var a = 17+ lec.href.search("hello.iitk.ac.in/");
 
-        let temp = { name: lec.innerHTML.trim(), week: weeks[weekCur].innerHTML, link: lec.href };
+        var b = lec.href.search("/#/lecture/")-a;
+        
+        var c = "https://d3i96zfsvt175x.cloudfront.net/" + lec.href.substr(a,b)+"/"+ "videos/original/" + lec.href.substr(b+a+11,lec.href.length-b-a-11) + ".mp4"
+        let temp = { name: lec.innerHTML.trim(), week: weeks[weekCur].innerHTML, link: c };
         scrap.push(temp);
 
 
